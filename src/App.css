@@ -30,14 +30,14 @@ body, html {
 
 @media (max-width: 1024px) {
   .Tree-image {
-    width: 20vw;
+    width: 30vw;
   }
 }
 
 
 @media (max-width: 767px) {
   .Tree-image {
-    width: 11vw;
+    width: 30vw;
   }
 }
 .App-background {
