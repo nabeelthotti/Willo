@@ -21,11 +21,11 @@ function Home() {
             onClick={() => setShowContact(!showContact)}
             className="App-contact-text"
           >
-            Contact
+            CONTACT
           </span>
           {showContact && (
             <div className="contact-info">
-              <p>Email: info@willow.cc</p>
+              <p>info@willow.cc</p>
             </div>
           )}
         </div>
@@ -33,7 +33,6 @@ function Home() {
 
       <div className="App-background"></div>
 
-      {/* Added the tree image here */}
       <img
         src={`${process.env.PUBLIC_URL}/tree.png`}
         className="Tree-image"
@@ -41,7 +40,7 @@ function Home() {
       />
 
       <footer className="App-footer">
-        <p>&copy; 2024 WILLO - ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2024 WILLO - All Rights Reserved.</p>
       </footer>
     </div>
   );
