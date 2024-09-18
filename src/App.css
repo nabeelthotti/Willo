@@ -8,7 +8,7 @@ body, html {
   height: 100%;
   font-family: 'Arial', sans-serif;
   overflow: hidden;
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
 }
 
 .App {
@@ -18,7 +18,7 @@ body, html {
 }
 
 .App-logo {
-  height: 50px; 
+  height: 50px;
 }
 
 .Tree-image {
@@ -28,9 +28,8 @@ body, html {
   transform: translate(-50%, -50%);
   width: 38vw;
   height: auto;
-  z-index: 0; 
+  z-index: 0;
 }
-
 
 @media (max-width: 1024px) {
   .Tree-image {
@@ -38,22 +37,21 @@ body, html {
   }
 }
 
-
 @media (max-width: 767px) {
   .Tree-image {
     width: 60vw;
   }
 }
+
 .App-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; 
-  overflow: hidden; 
+  z-index: 1;
+  overflow: hidden;
 }
-
 
 .App-background::before {
   content: '';
@@ -65,10 +63,9 @@ body, html {
   background-image: url('/public/wback.png');
   background-size: cover;
   background-position: center center;
-  opacity: 0.65; 
+  opacity: 0.65;
   z-index: 1;
 }
-
 
 .App-background::after {
   content: '';
@@ -83,18 +80,14 @@ body, html {
 
 .App-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3; 
-}
-
-.App-logo {
-  height: 50px;
+  z-index: 3;
 }
 
 .App-contact-text {
@@ -143,16 +136,17 @@ body, html {
   left: 0;
   width: 100%;
   text-align: center;
-  z-index: 3; 
+  z-index: 3;
   color: rgb(255, 255, 255);
   font-family: 'Arial', sans-serif;
   font-size: 20px;
   padding: 10px;
 }
 
+
+
 @media (max-width: 768px) {
   .App-header {
-    flex-direction: column;
   }
 
   .App-logo {
@@ -170,24 +164,23 @@ body, html {
   }
 }
 
-
 @media (max-width: 767px) {
   .App-logo {
-    height: 35px; 
+    height: 35px;
   }
 
   .App-contact-text {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .App-header {
-    padding: 15px; 
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .App-logo {
-    height: 30px; 
+    height: 30px;
   }
 
   .App-contact-text {
