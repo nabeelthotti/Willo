@@ -52,11 +52,15 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; 
-  overflow: hidden; 
+  display: none; /* Hidden by default */
+  z-index: 1; /* Below interactive elements but above other content */
 }
 
-.App-background::before {
+.App-background.show {
+  display: block; /* Show when 'show' class is added */
+}
+
+.App-background.show::before {
   content: '';
   position: absolute;
   top: 0;
@@ -65,21 +69,10 @@ body, html {
   height: 100%;
   background-image: url('/public/wback.png');
   background-size: cover;
-  background-position: center center;
-  opacity: 0.65; 
-  z-index: 1;
+  background-position: center;
+  opacity: 0.9; /* Visible with slight transparency */
 }
 
-.App-background::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  z-index: 2;
-}
 
 .App-header {
   display: flex;
