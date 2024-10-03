@@ -36,7 +36,7 @@ function Home() {
           </span>
           {showContact && (
             <div className="contact-info">
-              <p>info@willow.cc</p>
+              <p>info@willo.cc</p>
             </div>
           )}
         </div>
