@@ -39,6 +39,17 @@ body, html {
     object-position: left;
     max-height: 70vh; 
   }
+  .App-background {
+    width: 0%; 
+    height: 100%;
+    opacity: 1; 
+    overflow: hidden; 
+    transition: none; 
+  }
+
+  .App-background.show {
+    animation: revealBackground 5s forwards;
+  }
 }
 
 @media (max-width: 767px) {
@@ -48,6 +59,26 @@ body, html {
     max-height: 60vh; 
     object-position: left;
   }
+  .App-background {
+    width: 0%; 
+    height: 100%;
+    opacity: 1; 
+    overflow: hidden; 
+    transition: none;
+  }
+
+  .App-background.show {
+    animation: revealBackground 5s forwards;
+  }
+
+@keyframes revealBackground {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 }
 
 .App-background {
