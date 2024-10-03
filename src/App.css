@@ -50,17 +50,49 @@ body, html {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .App-background::before {
-    background-image: url('/public/wbackiphone.png');
+    background-image: url('/public/wback.png');
     background-size: cover;
     background-position: center;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .App-background::before {
-    background-image: url('/public/wbackiphone.png'); /* Mobile/iPhone image */
+    background-image: url('/public/wbackiphone.png?v=1'); 
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png?v=1');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png?v=1');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png?v=1'); 
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png?v=1'); 
     background-size: cover;
     background-position: center;
   }
