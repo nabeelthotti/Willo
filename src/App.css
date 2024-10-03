@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +35,6 @@ body, html {
   .Tree-image {
     object-position: left;
     width: 60vw;
-    object-position: left;
     max-height: 70vh; 
   }
 }
@@ -45,56 +43,7 @@ body, html {
   .Tree-image {
     object-position: left;
     width: 60vw;
-    max-height: 60vh; 
-    object-position: left;
-  }
-}
-
-@media (max-width: 1024px) {
-  .App-background::before {
-    background-image: url('/public/wback.png');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .App-background::before {
-    background-image: url('/public/wbackiphone.png?v=1'); 
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .App-background::before {
-    background-image: url('/public/wbackiphone.png?v=1');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .App-background::before {
-    background-image: url('/public/wbackiphone.png?v=1');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 375px) {
-  .App-background::before {
-    background-image: url('/public/wbackiphone.png?v=1'); 
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 320px) {
-  .App-background::before {
-    background-image: url('/public/wbackiphone.png?v=1'); 
-    background-size: cover;
-    background-position: center;
+    max-height: 60vh;
   }
 }
 
@@ -121,13 +70,19 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/wback.png');
+  background-image: url('/public/wback.png'); /* Default desktop image */
   background-size: cover;
   background-position: center;
 }
 
-
-
+/* For iPhone or smaller devices */
+@media (max-width: 767px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png?v=1'); /* Mobile/iPhone image */
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 .App-header {
   display: flex;
@@ -233,4 +188,3 @@ body, html {
     font-size: 10px; 
   }
 }
-
