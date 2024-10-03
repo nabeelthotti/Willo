@@ -34,6 +34,7 @@ body, html {
 
 @media (max-width: 1024px) {
   .Tree-image {
+    object-position: left;
     width: 60vw;
     object-position: left;
     max-height: 70vh; 
@@ -42,6 +43,7 @@ body, html {
 
 @media (max-width: 767px) {
   .Tree-image {
+    object-position: left;
     width: 60vw;
     max-height: 60vh; 
     object-position: left;
@@ -180,7 +182,7 @@ body, html {
 
 @media (max-width: 767px) {
   .App-footer {
-    font-size: 4px; 
+    font-size: 10px; 
   }
 }
 
