@@ -52,8 +52,17 @@ body, html {
 
 @media (max-width: 767px) {
   .App-background::before {
-    background-size: 200%; 
-    background-position: left; 
+    background-image: url('/public/wbackiphone.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .App-background::before {
+    background-image: url('/public/wbackiphone.png'); /* Mobile/iPhone image */
+    background-size: cover;
+    background-position: center;
   }
 }
 
