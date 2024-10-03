@@ -1,48 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
-  
-  const timerRef = useRef(null);
-
-  useEffect(() => {
-    if (showBackground) {
-      timerRef.current = setTimeout(() => {
-        setShowBackground(false);
-        timerRef.current = null; 
-      }, 5000);
-    }
-
-  
-    return () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-        timerRef.current = null;
-      }
-    };
-  }, [showBackground]);
 
   const toggleBackground = () => {
-    if (showBackground) {
-      setShowBackground(false);
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-        timerRef.current = null;
-      }
-    } else {
-      setShowBackground(true);
-    }
+    setShowBackground(true);
   };
 
   const hideBackground = () => {
     setShowBackground(false);
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-      timerRef.current = null;
-    }
   };
 
   return (
@@ -73,7 +42,7 @@ function Home() {
         </div>
       </header>
 
-      <div className={`App-background ${showBackground ? "show" : ""}`}></div>
+      <div className={`App-background ${showBackground ? 'show' : ''}`}></div>
 
       <img
         src={`${process.env.PUBLIC_URL}/tree.png`}

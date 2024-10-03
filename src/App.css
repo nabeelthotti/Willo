@@ -18,7 +18,7 @@ body, html {
 }
 
 .App-logo {
-  height: 50px; 
+  height: 35px; 
 }
 
 .Tree-image {
@@ -35,6 +35,7 @@ body, html {
 @media (max-width: 1024px) {
   .Tree-image {
     width: 60vw;
+    object-position: left;
     max-height: 70vh; 
   }
 }
@@ -43,6 +44,7 @@ body, html {
   .Tree-image {
     width: 60vw;
     max-height: 60vh; 
+    object-position: left;
   }
 }
 
@@ -52,15 +54,17 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  display: none; /* Hidden by default */
-  z-index: 1; /* Below interactive elements but above other content */
+  opacity: 0; 
+  transition: opacity 7s; 
+  z-index: 1;
+  pointer-events: none; 
 }
 
 .App-background.show {
-  display: block; /* Show when 'show' class is added */
+  opacity: 0.9; 
 }
 
-.App-background.show::before {
+.App-background::before {
   content: '';
   position: absolute;
   top: 0;
@@ -70,8 +74,9 @@ body, html {
   background-image: url('/public/wback.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.9; /* Visible with slight transparency */
 }
+
+
 
 
 .App-header {
@@ -90,7 +95,7 @@ body, html {
   color: rgb(255, 248, 248);
   font-weight: bold;
   font-family: 'Arial', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -135,7 +140,7 @@ body, html {
   z-index: 5; 
   color: rgb(255, 255, 255);
   font-family: 'Arial', sans-serif;
-  font-size: 20px;
+  font-size: px;
   padding: 10px;
 }
 
@@ -172,3 +177,10 @@ body, html {
     font-size: 16px;
   }
 }
+
+@media (max-width: 767px) {
+  .App-footer {
+    font-size: 4px; 
+  }
+}
+
